@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Practice</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 15px;
+            height: 90vh;
+            border: 5px black dashed;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .item {
+            width:150px;
+            height:150px;
+            border-radius: 15px;
+            font-size: 2em;
+            color: white;
+            
+        }
+
+        #child1 {
+            background-color: #cc0077;
+            order: 3;
+            /* flex-shrink: 2; */
+        }
+
+        #child2 {
+            background-color: #cc7700;
+            /* flex-grow: 1; */
+        }
+
+        #child3 {
+            background-color: #0077ff;
+            /* flex-grow: 1; */
+        }
+
+        #child4 {
+            background-color: #00ff66;
+            /* flex-grow: 2; */
+        }
+
+        #child5 {
+            background-color:bisque;
+            flex-grow:0;
+        }
+        #child6 {
+            background-color:cadetblue;
+            flex-grow:1;
+        }
+        #child7 {
+            background-color:cornflowerblue;
+            flex-grow: 2;
+        }
+        #child8 {
+            background-color:darkolivegreen;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="child1">1</div>
+        <div class="item" id="child2">2</div>
+        <div class="item" id="child3">3</div>
+        <div class="item" id="child4">4</div>
+        <!-- <div class="item" id="child5">5</div>
+        <div class="item" id="child6">6</div>
+        <div class="item" id="child7">7</div>
+        <div class="item" id="child8">8</div> -->
+    </div>
+</body>
+</html>
